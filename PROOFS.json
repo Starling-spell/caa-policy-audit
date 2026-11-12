@@ -1,0 +1,352 @@
+{
+  "network": "StudioNet",
+  "source_commit": "fd3f6630c18f9d872c6c3ecb736a353322c83889",
+  "transactions": [
+    {
+      "step": "deploy",
+      "args": [
+        "deploy",
+        "--contract",
+        "contracts/CAAPolicyAudit.py"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1db",
+      "hash": "0x8c5c90a1e054f6b234f2e5d66317b5cb61619c7b72b7fdf457f5d6252f1fcbcd",
+      "receipt": {
+        "hash": "0x8c5c90a1e054f6b234f2e5d66317b5cb61619c7b72b7fdf457f5d6252f1fcbcd",
+        "address": "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "observe-www.cloudflare.com",
+      "args": [
+        "write",
+        "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+        "observe",
+        "--args",
+        "www.cloudflare.com"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1dc",
+      "hash": "0xc9212bc0b3e5023d1cf10f374e072b808381407dc28f59e31bc4e17b93da1c3e",
+      "receipt": {
+        "hash": "0xc9212bc0b3e5023d1cf10f374e072b808381407dc28f59e31bc4e17b93da1c3e",
+        "address": "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "observe-dns.google",
+      "args": [
+        "write",
+        "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+        "observe",
+        "--args",
+        "dns.google"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1dd",
+      "hash": "0x124d9d990a7ba323c195884e831b5c83bd0b29b1a6bdce4124fa9c5e2972d082",
+      "receipt": {
+        "hash": "0x124d9d990a7ba323c195884e831b5c83bd0b29b1a6bdce4124fa9c5e2972d082",
+        "address": "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    }
+  ],
+  "address": "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+  "source": {
+    "address": "0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624",
+    "source_match": true,
+    "sha256": "3c8014bba1b7f6c1a23a7c4dcdc9a65e6ab676791fa1b84eda8aeaeb1b20a249"
+  },
+  "observations": {
+    "www.cloudflare.com": {
+      "id": "2948687a8537b65f77d9fd874a0970127ef8ee3abea2bc5067df58bb8d5d2b56",
+      "observation": {
+        "evidence": {
+          "effective_name": "cloudflare.com",
+          "name": "www.cloudflare.com",
+          "path": [
+            {
+              "authenticated": true,
+              "name": "www.cloudflare.com",
+              "records": []
+            },
+            {
+              "authenticated": true,
+              "name": "cloudflare.com",
+              "records": [
+                [
+                  0,
+                  "iodef",
+                  "mailto:tls-abuse@cloudflare.com"
+                ],
+                [
+                  0,
+                  "issue",
+                  "comodoca.com"
+                ],
+                [
+                  0,
+                  "issue",
+                  "digicert.com; cansignhttpexchanges=yes"
+                ],
+                [
+                  0,
+                  "issue",
+                  "letsencrypt.org"
+                ],
+                [
+                  0,
+                  "issue",
+                  "pki.goog; cansignhttpexchanges=yes"
+                ],
+                [
+                  0,
+                  "issue",
+                  "ssl.com"
+                ],
+                [
+                  0,
+                  "issuewild",
+                  "comodoca.com"
+                ],
+                [
+                  0,
+                  "issuewild",
+                  "digicert.com; cansignhttpexchanges=yes"
+                ],
+                [
+                  0,
+                  "issuewild",
+                  "letsencrypt.org"
+                ],
+                [
+                  0,
+                  "issuewild",
+                  "pki.goog; cansignhttpexchanges=yes"
+                ],
+                [
+                  0,
+                  "issuewild",
+                  "ssl.com"
+                ]
+              ]
+            }
+          ],
+          "plain": {
+            "entries": [
+              {
+                "issuer": "comodoca.com",
+                "parameters": ""
+              },
+              {
+                "issuer": "digicert.com",
+                "parameters": "cansignhttpexchanges=yes"
+              },
+              {
+                "issuer": "letsencrypt.org",
+                "parameters": ""
+              },
+              {
+                "issuer": "pki.goog",
+                "parameters": "cansignhttpexchanges=yes"
+              },
+              {
+                "issuer": "ssl.com",
+                "parameters": ""
+              }
+            ],
+            "tag": "issue"
+          },
+          "unknown_critical": [],
+          "wildcard": {
+            "entries": [
+              {
+                "issuer": "comodoca.com",
+                "parameters": ""
+              },
+              {
+                "issuer": "digicert.com",
+                "parameters": "cansignhttpexchanges=yes"
+              },
+              {
+                "issuer": "letsencrypt.org",
+                "parameters": ""
+              },
+              {
+                "issuer": "pki.goog",
+                "parameters": "cansignhttpexchanges=yes"
+              },
+              {
+                "issuer": "ssl.com",
+                "parameters": ""
+              }
+            ],
+            "tag": "issuewild"
+          }
+        },
+        "observed_at": 1794466297
+      },
+      "assessments": [
+        {
+          "effective_name": "cloudflare.com",
+          "issuer": "letsencrypt.org",
+          "name": "www.cloudflare.com",
+          "observation_id": "2948687a8537b65f77d9fd874a0970127ef8ee3abea2bc5067df58bb8d5d2b56",
+          "observed_at": 1794466297,
+          "property": "issue",
+          "status": "MATCH",
+          "wildcard": false
+        },
+        {
+          "effective_name": "cloudflare.com",
+          "issuer": "letsencrypt.org",
+          "name": "www.cloudflare.com",
+          "observation_id": "2948687a8537b65f77d9fd874a0970127ef8ee3abea2bc5067df58bb8d5d2b56",
+          "observed_at": 1794466297,
+          "property": "issuewild",
+          "status": "MATCH",
+          "wildcard": true
+        },
+        {
+          "effective_name": "cloudflare.com",
+          "issuer": "pki.goog",
+          "name": "www.cloudflare.com",
+          "observation_id": "2948687a8537b65f77d9fd874a0970127ef8ee3abea2bc5067df58bb8d5d2b56",
+          "observed_at": 1794466297,
+          "property": "issue",
+          "status": "CONDITIONAL",
+          "wildcard": false
+        },
+        {
+          "effective_name": "cloudflare.com",
+          "issuer": "example.com",
+          "name": "www.cloudflare.com",
+          "observation_id": "2948687a8537b65f77d9fd874a0970127ef8ee3abea2bc5067df58bb8d5d2b56",
+          "observed_at": 1794466297,
+          "property": "issuewild",
+          "status": "EXCLUDED",
+          "wildcard": true
+        }
+      ]
+    },
+    "dns.google": {
+      "id": "5d54bd8bc3d2c591eb9053cb34686f1742a219c29ebb73015e0e8380c3b0d9d7",
+      "observation": {
+        "evidence": {
+          "effective_name": "dns.google",
+          "name": "dns.google",
+          "path": [
+            {
+              "authenticated": true,
+              "name": "dns.google",
+              "records": [
+                [
+                  0,
+                  "issue",
+                  "pki.goog"
+                ],
+                [
+                  128,
+                  "issue",
+                  "pki.goog"
+                ]
+              ]
+            }
+          ],
+          "plain": {
+            "entries": [
+              {
+                "issuer": "pki.goog",
+                "parameters": ""
+              },
+              {
+                "issuer": "pki.goog",
+                "parameters": ""
+              }
+            ],
+            "tag": "issue"
+          },
+          "unknown_critical": [],
+          "wildcard": {
+            "entries": [
+              {
+                "issuer": "pki.goog",
+                "parameters": ""
+              },
+              {
+                "issuer": "pki.goog",
+                "parameters": ""
+              }
+            ],
+            "tag": "issue"
+          }
+        },
+        "observed_at": 1794466440
+      },
+      "assessments": [
+        {
+          "effective_name": "dns.google",
+          "issuer": "pki.goog",
+          "name": "dns.google",
+          "observation_id": "5d54bd8bc3d2c591eb9053cb34686f1742a219c29ebb73015e0e8380c3b0d9d7",
+          "observed_at": 1794466440,
+          "property": "issue",
+          "status": "MATCH",
+          "wildcard": false
+        },
+        {
+          "effective_name": "dns.google",
+          "issuer": "pki.goog",
+          "name": "dns.google",
+          "observation_id": "5d54bd8bc3d2c591eb9053cb34686f1742a219c29ebb73015e0e8380c3b0d9d7",
+          "observed_at": 1794466440,
+          "property": "issue",
+          "status": "MATCH",
+          "wildcard": true
+        },
+        {
+          "effective_name": "dns.google",
+          "issuer": "letsencrypt.org",
+          "name": "dns.google",
+          "observation_id": "5d54bd8bc3d2c591eb9053cb34686f1742a219c29ebb73015e0e8380c3b0d9d7",
+          "observed_at": 1794466440,
+          "property": "issue",
+          "status": "EXCLUDED",
+          "wildcard": true
+        }
+      ]
+    }
+  },
+  "verified": true
+}

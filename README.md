@@ -22,4 +22,4 @@ genvm-lint check contracts/CAAPolicyAudit.py
 python -m pytest tests -q
 ```
 
-StudioNet deployment pending.
+[StudioNet contract](https://explorer-studio.genlayer.com/address/0xbbD828A3B8BB001AA86e5f16Ffe7e7B1C118a624) · [Live proof matrix](LIVE_PROOFS.md) · [Submission text](SUBMISSION.md)
